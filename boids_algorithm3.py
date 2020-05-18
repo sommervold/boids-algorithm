@@ -39,7 +39,7 @@ class Window:
             # Video initializing
             letters = string.ascii_lowercase
             random_str = ''.join(random.choice(letters) for _ in range(4)) # Random id to prevent overwriting other videos
-            path = "C:\\Koding\\Scripts\\Python\\Boids algorithm\\"
+            path = "PATH/TO/NEW/VIDEOFILE"
             file =  path + str(self.num_birds) + '_' + random_str + ".avi" # Finished video location
             fourcc = VideoWriter_fourcc(*'MP42')
             self.video = VideoWriter(file, fourcc, float(self.fps), (self.width, self.height))
